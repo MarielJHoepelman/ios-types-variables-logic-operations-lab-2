@@ -21,7 +21,14 @@ var grade2 = 9.0
 var grade3 = 5.0
 
 // your code here
-```
+var average = (grade1 + grade2 + grade3) / 3
+var yourGrade = 8.0
+
+if yourGrade > Double(average) {
+print("above average")
+} else if yourGrade < Double(average) {
+print("below average")
+}
 
 ***
 ## Question 2
@@ -32,7 +39,14 @@ You are given a number. Print even if the number is even or odd otherwise.
 let number = 2
 
 // your code here
-```
+let number = 2
+
+if number % 2 == 0 {
+print("Number is even.")
+} else {
+print("Number is odd.")
+}
+
 
 ***
 ## Question 3
@@ -44,7 +58,11 @@ var a = 12
 var b = 3
 
 // code here
-```
+if a % b == 0 {
+print("Divisible.")
+} else {
+print("Not divisible.")
+}
 
 ***
 ## Question 4
@@ -57,7 +75,11 @@ var b = 3
 var c = 2
 
 // your code here
-```
+if a == b || b==c || a==c {
+print("At least two variables have the same value.")
+} else {
+print("All the values are different.")
+}
 
 ***
 ## Question 5
@@ -69,7 +91,14 @@ var baconAge = 6 // the bacon is 6 days old
 var eggsAge = 12 // eggs are 12 days old
 
 // your code here
-```
+
+if baconAge < 7 && eggsAge < 21 {
+print("You can cook bacon and eggs!")
+} else if baconAge >= 7 {
+print("Throw out Bacon.")
+} else if eggsAge >= 21 {
+print("Throw out egg.")
+}
 
 ***
 ## Question 6
@@ -81,7 +110,16 @@ The above rule is valid except that every 100 years special rules apply. Years t
 let year = 2014
 
 // your code here
-```
+// this is David's code. Refactor!
+if year % 400 == 0 {
+print("Leap")
+} else if year % 100 == 0 {
+print("Not leap")
+} else if year % 4 == 0 {
+print("Leap")
+} else {
+print("Not leap")
+}
 
 ***
 ## Question 7
@@ -92,7 +130,12 @@ If you use `random()` it will give you a random number within a specified range.
 let randomNum = Int.random(in: 0...100)
 
 // your code here
-```
+if randomNum % 2 == 0 {
+print("Heads")
+} else {
+print("Tails")
+}
+
 
 Hint: use an if/else block along with the `%` operator
 
@@ -108,6 +151,20 @@ var c = 3
 var d = 4
 
 // your code here
-```
+//short way
+let smallest = min(a, b, c, d)
 
+//long way
+if a < b && a < c && a < d  {
+print(a)
+}
+else if b < a && b < c && b < d {
+print(b)
+}
+else if c < a && c < b && c < d {
+print(c)
+}
+else if d < a && d < b && d < c {
+print(d)
+}
 ***
